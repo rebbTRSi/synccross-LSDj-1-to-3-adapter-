@@ -1,0 +1,60 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# C
+#
+DEF C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 20  -80 -30  80 -30 N
+P 2 0 1 20  -80 30  80 30 N
+X ~ 1 0 150 110 D 40 40 1 1 P
+X ~ 2 0 -150 110 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GBC_link
+#
+DEF GBC_link conn 0 40 Y Y 1 F N
+F0 "conn" -950 -150 60 V V C CNN
+F1 "GBC_link" -800 -150 60 V V C CNN
+F2 "" 150 -1250 60 H V C CNN
+F3 "" 150 -1250 60 H V C CNN
+DRAW
+X +5v 1 0 -450 200 L 50 50 1 1 I
+X Serial_out 2 0 0 200 L 50 50 1 1 I
+X serial_in 3 0 -350 200 L 50 50 1 1 I
+X SD 4 0 100 200 L 50 50 1 1 I
+X Clock 5 0 -250 200 L 50 50 1 1 I
+X GND 6 0 200 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# GBC_link_edge_connector
+#
+DEF GBC_link_edge_connector conn 0 40 Y Y 1 F N
+F0 "conn" -950 -150 60 V V C CNN
+F1 "GBC_link_edge_connector" -800 -150 60 V V C CNN
+F2 "" 150 -1250 60 H V C CNN
+F3 "" 150 -1250 60 H V C CNN
+DRAW
+X +5v 1 0 -450 200 L 50 50 1 1 I
+X Serial_out 2 0 0 200 L 50 50 1 1 I
+X serial_in 3 0 -350 200 L 50 50 1 1 I
+X SD 4 0 100 200 L 50 50 1 1 I
+X Clock 5 0 -250 200 L 50 50 1 1 I
+X GND 6 0 200 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

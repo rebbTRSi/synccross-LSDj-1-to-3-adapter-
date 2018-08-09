@@ -1,0 +1,114 @@
+(pcb "/Users/teemupohjanlehto/Documents/GB-Sync/GB-Sync.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.2-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  141605 -101600  158750 -101600  158750 -132080  141605 -132080
+            141605 -101600  141605 -101600)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component gb_link:gb_link_port
+      (place conn1 149860 -101600 front 0 (PN GBC_link_edge_connector))
+      (place conn2 158115 -108585 front 90 (PN GBC_link_edge_connector))
+      (place conn3 141605 -108585 front 90 (PN GBC_link_edge_connector))
+      (place conn4 158115 -115570 front 90 (PN GBC_link_edge_connector))
+      (place conn5 141605 -115570 front 90 (PN GBC_link_edge_connector))
+      (place conn6 158115 -123190 front 90 (PN GBC_link_edge_connector))
+      (place conn7 141605 -123190 front 90 (PN GBC_link_edge_connector))
+      (place conn8 158115 -130810 front 90 (PN GBC_link_edge_connector))
+    )
+  )
+  (library
+    (image gb_link:gb_link_port
+      (pin Rect[T]Pad_1000x5000_um 3 762 0)
+      (pin Rect[T]Pad_1000x5000_um 1 -1270 0)
+      (pin Rect[T]Pad_1000x5000_um 5 2794 0)
+      (pin Rect[B]Pad_1000x5000_um 6 2794 0)
+      (pin Rect[B]Pad_1000x5000_um 4 762 0)
+      (pin Rect[B]Pad_1000x5000_um 2 -1270 0)
+    )
+    (padstack Rect[B]Pad_1000x5000_um
+      (shape (rect B.Cu -500 -2500 500 2500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1000x5000_um
+      (shape (rect F.Cu -500 -2500 500 2500))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(conn1-Pad3)"
+      (pins conn1-3 conn1-6 conn2-3 conn2-6 conn3-3 conn3-6 conn4-3 conn4-6 conn5-3
+        conn5-6 conn6-3 conn6-6 conn7-3 conn7-6 conn8-3 conn8-6)
+    )
+    (net "Net-(conn1-Pad1)"
+      (pins conn1-1 conn2-1 conn3-1 conn4-1 conn5-1 conn6-1 conn7-1 conn8-1)
+    )
+    (net "Net-(conn1-Pad4)"
+      (pins conn1-5 conn1-4 conn2-5 conn2-4 conn3-5 conn3-4 conn4-5 conn4-4 conn5-5
+        conn5-4 conn6-5 conn6-4 conn7-5 conn7-4 conn8-5 conn8-4)
+    )
+    (net "Net-(conn1-Pad2)"
+      (pins conn1-2 conn2-2 conn3-2 conn4-2 conn5-2 conn6-2 conn7-2 conn8-2)
+    )
+    (class kicad_default "" "Net-(conn1-Pad1)" "Net-(conn1-Pad2)" "Net-(conn1-Pad3)"
+      "Net-(conn1-Pad4)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+    (wire (path F.Cu 250  151765 -107823  151765 -107950)(net "Net-(conn1-Pad3)")(type protect))
+    (wire (path F.Cu 250  150622 -101600  150622 -107442)(net "Net-(conn1-Pad3)")(type protect))
+    (wire (path F.Cu 250  151003 -107823  151765 -107823  158115 -107823)(net "Net-(conn1-Pad3)")(type protect))
+    (wire (path F.Cu 250  150622 -107442  151003 -107823)(net "Net-(conn1-Pad3)")(type protect))
+    (wire (path F.Cu 250  149860 -124460  149860 -131445)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  150495 -132080  158115 -132080)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  149860 -131445  150495 -132080)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  149860 -124460  141605 -124460)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  158115 -124460  149860 -124460  149860 -116840  141605 -116840)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  158115 -116840  149860 -116840  149860 -109855  141605 -109855)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  148590 -101600  148590 -108585)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  149860 -109855  158115 -109855)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  148590 -108585  149860 -109855)(net "Net-(conn1-Pad1)")(type protect))
+    (wire (path F.Cu 250  152654 -101600  152654 -105664)(net "Net-(conn1-Pad4)")(type protect))
+    (wire (path F.Cu 250  152781 -105791  158115 -105791)(net "Net-(conn1-Pad4)")(type protect))
+    (wire (path F.Cu 250  152654 -105664  152781 -105791)(net "Net-(conn1-Pad4)")(type protect))
+  )
+)
